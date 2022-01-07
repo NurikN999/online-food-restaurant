@@ -136,6 +136,9 @@ fieldset{
     width: 28%;
     float: left;
     margin: 2%;
+    background-color: #2f3542;
+    box-shadow: 5px 5px 10px 5px #2f3542;
+    border-radius: 15px;
 }
 
 
