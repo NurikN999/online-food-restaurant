@@ -1,45 +1,36 @@
-/*
-    Author: Nurkamal Nurmukhamed;
-    Theme: Food Restaurant;
-    Version: 0.1;
+/* 
+    Author: Nurmukhamed;
+    Theme: Restaurant Food Order;
+    version: 0.2;
 */
 
-
-/* CSS FOR ALL HTML FILE */
+/* CSS for All */
 *{
-    padding: 0 0;
     margin: 0 0;
-    font-family: 'Arial';
+    padding: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-
-
-ul li{
-    list-style: none;
-}
-
-.img-responsive{
-    width: 100%;
-}
-
-.img-curve{
-    border-radius: 15px 15px 15px 15px;
-}
-
 .container{
     width: 80%;
     margin: 0 auto;
     padding: 1%;
 }
+.img-responsive{
+    width: 100%;
+}
+.img-curve{
+    border-radius: 15px;
+}
 
 .text-right{
     text-align: right;
 }
-
 .text-center{
     text-align: center;
 }
-
+.text-left{
+    text-align: left;
+}
 .text-white{
     color: white;
 }
@@ -50,81 +41,77 @@ ul li{
 }
 
 a{
-    color: black;
+    color: #ff6b81;
     text-decoration: none;
+}
+a:hover{
+    color: #ff4757;
+    transition: 0.5s;
 }
 
 .btn{
     padding: 1%;
     border: none;
-    border-radius: 15px 15px 15px 15px;
     font-size: 1rem;
+    border-radius: 15px;
 }
-
 .btn-primary{
-    background-color: #ff4757;
+    background-color: #ff6b81;
     color: white;
     cursor: pointer;
 }
-
 .btn-primary:hover{
-    background-color: #ff6b81;
-    transition: 0.5s;
+    color: white;
+    background-color: #ff4757;
 }
-
 h2{
     color: #2f3542;
     font-size: 2rem;
     margin-bottom: 2%;
 }
-
 h3{
     font-size: 1.5rem;
 }
-
 .float-container{
     position: relative;
 }
-
 .float-text{
     position: absolute;
-    bottom:50px;
+    bottom: 50px;
     left: 40%;
 }
-
-i{
-    margin: 0 5%;
-}
-.menu-a:hover{
-    color: #ff4757;
-    transition: 0.5s;
+fieldset{
+    border: 1px solid white;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 5px;
 }
 
-/* CSS for navbar */
 
+/* CSSS for navbar section */
 
 .logo{
     width: 10%;
     float: left;
 }
-
 .menu{
     line-height: 60px;
+}
+.menu ul{
+    list-style-type: none;
 }
 
 .menu ul li{
     display: inline;
-    padding: 3%;
+    padding: 1%;
     font-weight: bold;
 }
 
 
-
-/* CSS for Search section */
-
+/* CSS for Food SEarch Section */
 
 .food-search{
-    background-image: url('../images/bg.jpg');
+    background-image: url(../images/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -136,39 +123,34 @@ i{
     padding: 1%;
     font-size: 1rem;
     border: none;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 15px;
 }
 
-/* CSS for categories */
 
+/* CSS for Categories */
 .categories{
     padding: 4% 0;
 }
 
-.card-3{
-    width: 27%;
+.box-3{
+    width: 28%;
     float: left;
-    margin: 3%;
-    text-align: center;
-    border-radius: 15px 15px 15px 15px;
-    box-shadow: 5px 5px 10px 1px #2f3542;
-    background-color: #2f3542;
+    margin: 2%;
 }
+
 
 /* CSS for Food Menu */
-
 .food-menu{
-    background-color:  #ececec;
+    background-color: #ececec;
     padding: 4% 0;
 }
-
-.food-card{
+.food-menu-box{
     width: 43%;
     margin: 1%;
-    float: left;
     padding: 2%;
+    float: left;
     background-color: white;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 15px;
 }
 
 .food-menu-img{
@@ -176,34 +158,53 @@ i{
     float: left;
 }
 
-.food-menu-description{
+.food-menu-desc{
     width: 70%;
     float: left;
     margin-left: 8%;
 }
 
-.price{
+.food-price{
     font-size: 1.2rem;
     margin: 2% 0;
 }
-
-.description{
+.food-detail{
     font-size: 1rem;
     color: #747d8c;
 }
 
 
-/* CSS for social networks */
-
-.social-networks ul li{
+/* CSS for Social */
+.social ul{
+    list-style-type: none;
+}
+.social ul li{
     display: inline;
     padding: 1%;
 }
 
+/* for Order Section */
+.order{
+    width: 50%;
+    margin: 0 auto;
+}
+.input-responsive{
+    width: 96%;
+    padding: 1%;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.order-label{
+    margin-bottom: 1%; 
+    font-weight: bold;
+}
 
 
 
-/* CSS for mobile smaller screen */
+/* CSS for Mobile Size or Smaller Screen */
+
 @media only screen and (max-width:768px){
     .logo{
         width: 80%;
@@ -218,33 +219,31 @@ i{
     .food-search input[type="search"]{
         width: 90%;
         padding: 2%;
-        margin-bottom: 5%;
+        margin-bottom: 3%;
     }
 
     .btn{
-        width: 90%;
-        padding: 3%;
+        width: 91%;
+        padding: 2%;
     }
 
     .food-search{
         padding: 10% 0;
     }
 
-    .card-3{
-        width: 90%;
-        margin: 4% auto;
-    }
-
-    h2{
-        margin-bottom: 10%;
-    }
-
     .categories{
         padding: 20% 0;
     }
+    h2{
+        margin-bottom: 10%;
+    }
+    .box-3{
+        width: 100%;
+        margin: 4% auto;
+    }
 
     .food-menu{
-        padding: 20% auto;
+        padding: 20% 0;
     }
 
     .food-menu-box{
@@ -252,9 +251,10 @@ i{
         padding: 5%;
         margin-bottom: 5%;
     }
-
-    .social-networks{
+    .social{
         padding: 5% 0;
     }
-    
+    .order{
+        width: 100%;
+    }
 }
